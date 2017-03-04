@@ -6,6 +6,8 @@ Partial but working version of the FollowClosely site, which was lost on a Digit
 
 Homepage works and templates are built, but **routing doesn't seem to work**. Find the Stack Overflow post about how to hack the Ghost core to allow the display of "All Posts" on a route other than the route route.
 
+[Here's the Stack Overflow Link](http://stackoverflow.com/questions/23640333/is-there-a-way-to-give-ghost-static-pages-access-to-the-posts-variable-that-in).
+
 ####To Run Dev
 1. nvm use 4.2.0
 2. npm i
