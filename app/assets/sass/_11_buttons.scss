@@ -1,0 +1,879 @@
+/* ==========================================================================
+   11_BUTTONS
+   ========================================================================== */
+
+// From application.scss
+
+.button-blue {
+    margin-bottom: 6px
+}
+.button,
+button,
+input[type="button"] {
+    color: #777;
+    font-weight: normal;
+    background: #eee;
+    box-shadow: none
+}
+.button:not(.button-loading):hover,
+.button:not(.button-loading):focus,
+button:not(.button-loading):hover,
+button:not(.button-loading):focus,
+input[type="button"]:not(.button-loading):hover,
+input[type="button"]:not(.button-loading):focus {
+    border-color: rgba(0, 0, 0, 0.1)
+}
+.button-dark,
+button.dark {
+    color: #fff;
+    font-weight: normal;
+    background: #7d878a;
+    box-shadow: none
+}
+.button-dark:not(.button-loading):hover,
+.button-dark:not(.button-loading):focus,
+button.dark:not(.button-loading):hover,
+button.dark:not(.button-loading):focus {
+    background: #646d70
+}
+.button-blue-hollow {
+    background: #fff;
+    border-color: #5ba4e5;
+    color: #5ba4e5
+}
+.button-blue-hollow:link,
+.button-blue-hollow:visited {
+    color: #5ba4e5
+}
+.button-blue-hollow:not(.button-loading):hover,
+.button-blue-hollow:not(.button-loading):focus {
+    background: #5ba4e5;
+    color: #fff
+}
+.button-green-hollow {
+    background: #fff;
+    border-color: #D01040;
+    color: #D01040
+}
+.button-green-hollow:link,
+.button-green-hollow:visited {
+    color: #D01040
+}
+.button-green-hollow:not(.button-loading):hover,
+.button-green-hollow:not(.button-loading):focus {
+    background: #D01040;
+    color: #fff
+}
+.button-black-hollow {
+    background: #fff;
+    border-color: #242628;
+    color: #242628
+}
+.button-black-hollow:link,
+.button-black-hollow:visited {
+    color: #242628
+}
+.button-black-hollow:not(.button-loading):hover,
+.button-black-hollow:not(.button-loading):focus {
+    background: #242628;
+    color: #fff
+}
+.button-white {
+    background: #fff;
+    border-color: #E1E1E1;
+    color: #B4B4B4;
+    box-shadow: none
+}
+.button-white:not(.button-loading):hover,
+.button-white:not(.button-loading):focus {
+    border-color: $pinkButton;
+    color: $pinkButton
+}
+.button-save,
+.button-blue,
+button[type="submit"],
+input[type="submit"] {
+    background: #5ba4e5;
+    box-shadow: none
+}
+.button-save:not(.button-loading):hover,
+.button-save:not(.button-loading):focus,
+.button-blue:not(.button-loading):hover,
+.button-blue:not(.button-loading):focus,
+button[type="submit"]:not(.button-loading):hover,
+button[type="submit"]:not(.button-loading):focus,
+input[type="submit"]:not(.button-loading):hover,
+input[type="submit"]:not(.button-loading):focus {
+    background: #2f8cde
+}
+.button-edit,
+.button-edit[type="submit"] {
+    background: #a45be5;
+    box-shadow: none
+}
+.button-edit:not(.button-loading):hover,
+.button-edit:not(.button-loading):focus,
+.button-edit[type="submit"]:not(.button-loading):hover,
+.button-edit[type="submit"]:not(.button-loading):focus {
+    background: #8c2fde
+}
+.button-green,
+.button-add,
+.button-add[type="submit"] {
+    background: #D01040;
+}
+.button-green:hover {
+    background: lighten($pinkButton, 10%) !important;
+}
+.button-pink:hover {
+    background: lighten($pinkButton, 10%);
+}
+.button-green:not(.button-loading):hover,
+.button-green:not(.button-loading):focus,
+.button-add:not(.button-loading):hover,
+.ghost-pro-ad:hover .button-add:not(.button-loading),
+.button-add:not(.button-loading):focus,
+.button-add[type="submit"]:not(.button-loading):hover,
+.ghost-pro-ad:hover [type="submit"].button-add:not(.button-loading),
+.button-add[type="submit"]:not(.button-loading):focus {
+    background: darken($blue,10%);
+}
+.button-delete,
+button[type="reset"],
+button[type="submit"].button-delete,
+input[type="reset"] {
+    background: #e25440;
+    box-shadow: none
+}
+.button-delete:not(.button-loading):hover,
+.button-delete:not(.button-loading):focus,
+button[type="reset"]:not(.button-loading):hover,
+button[type="reset"]:not(.button-loading):focus,
+button[type="submit"].button-delete:not(.button-loading):hover,
+button[type="submit"].button-delete:not(.button-loading):focus,
+input[type="reset"]:not(.button-loading):hover,
+input[type="reset"]:not(.button-loading):focus {
+    background: #cf3520
+}
+.button-warning,
+.button-warning[type="submit"] {
+    background: #fa6e4f
+}
+.button-warning:not(.button-loading):hover,
+.button-warning:not(.button-loading):focus,
+.button-warning[type="submit"]:not(.button-loading):hover,
+.button-warning[type="submit"]:not(.button-loading):focus {
+    background: #f94d27
+}
+.button-disabled,
+button[type="disabled"] {
+    letter-spacing: 0;
+    box-shadow: none;
+    background: #eeefef;
+    border: 0.1em solid rgba(0, 0, 0, 0.1);
+    color: #b3b9ba;
+    cursor: not-allowed
+}
+.button-disabled:not(.button-loading):hover,
+.button-disabled:not(.button-loading):focus,
+.button-disabled:active,
+button[type="disabled"]:not(.button-loading):hover,
+button[type="disabled"]:not(.button-loading):focus,
+button[type="disabled"]:active {
+    box-shadow: none;
+    background: #eeefef;
+    border: 0.1em solid rgba(0, 0, 0, 0.1);
+    color: #b3b9ba;
+    cursor: not-allowed
+}
+.button-alt {
+    background: #eeefef;
+    color: #4c5355;
+    font-size: 0.9em;
+    font-weight: normal;
+    text-transform: none;
+    letter-spacing: normal
+}
+.button-alt:not(.button-loading):hover,
+.button-alt:not(.button-loading):focus {
+    background: #ced1d2
+}
+.button-link {
+    color: #5ba4e5;
+    background: transparent;
+    border: none
+}
+.button-link:not(.button-loading):hover,
+.button-link:not(.button-loading):focus {
+    background: transparent;
+    text-decoration: underline
+}
+.button-loading:hover {
+    cursor: default
+}
+.button-divider {
+    position: relative;
+    text-align: center
+}
+@media (max-width: 600px) {
+    .button-divider {
+        margin-top: 6rem;
+        margin-bottom: 7rem
+    }
+}
+@media (min-width: 601px) and (max-width: 800px) {
+    .button-divider {
+        margin-top: 8rem;
+        margin-bottom: 9rem
+    }
+}
+@media (min-width: 801px) {
+    .button-divider {
+        margin-top: 11rem;
+        margin-bottom: 12.5rem
+    }
+}
+.button-divider:last-of-type {
+    margin-bottom: 0.4rem
+}
+@media (min-width: 601px) {
+    .button-divider:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        height: 1px;
+        // background-color: #e2edf2;
+        z-index: 1
+    }
+}
+.button-divider .button-add {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 440px;
+    font-size: 1.6rem
+}
+@media (min-width: 601px) {
+    .button-divider .button-add:before,
+    .button-divider .button-add:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        background: #fff
+    }
+    .button-divider .button-add:before {
+        left: -20px;
+        width: 20px
+    }
+    .button-divider .button-add:after {
+        right: -20px;
+        width: 20px
+    }
+}
+@media (max-width: 440px) {
+    .button-divider .button-add {
+        font-size: 1.2rem
+    }
+}
+
+// From styles.scss
+.ghost-love-button {
+    padding: 15px 10px;
+    margin: 80px -30px -30px -30px;
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: $red;
+    @include breakpoint(1000px) { margin-top: 30px; }
+}
+.ghost-love:hover .ghost-love-button {
+    background: $darkgrey;
+}
+.home-sign-up-banner div .button-add {
+    background: $pinkButton;
+    &:hover {
+        background: lighten($pinkButton, 10%)
+    }
+}
+.button-pink {
+    background: $pinkButton !important;
+    color: #fff;
+    &:hover {
+    background: lighten($pinkButton, 10%) !important;
+    }
+}
+.subscribe-banner .button {
+	color: #fff;
+	background: $pinkButton;
+	// margin-left:1em;
+	margin-right:1em;
+}
+.subscribe-banner .button:hover {
+	background: lighten($pinkButton, 15%);
+}
+
+//===============================//
+//...... _BUTTONS SIGNUP=========//
+//===============================//
+#signup {
+    width: 580px
+}
+#signup h2 {
+    font-size: 4rem;
+    border: none;
+    padding-top: 0;
+    margin-top: 0
+}
+#signup p {
+    font-size: 1.4rem;
+    color: #868c92
+}
+#signup .button-add {
+    font-size: 1.2em;
+    position: absolute;
+    bottom: 60px;
+    left: 40px
+}
+#signup input {
+    width: 190px;
+    height: 23px
+}
+#signup button {
+    position: relative;
+    top: -1px
+}
+@media (max-width: 660px),
+(max-width: 660px) {
+    #signup {
+        width: 260px;
+        padding: 20px 20px 20px 20px;
+        margin-left: -150px;
+        top: 10%;
+        font-size: 1.2rem;
+        line-height: 1.5em
+    }
+    #signup h2 {
+        font-size: 2.8rem
+    }
+    #signup input {
+        width: 250px;
+        margin-bottom: 10px
+    }
+}
+
+
+//==================================//
+//..... _BUTTONS FORM BUTTONS ......//
+//==================================//
+
+.button,
+button,
+input[type="button"],
+.button-dark,
+button.dark,
+.button-blue-hollow,
+.button-green-hollow,
+.button-black-hollow,
+.button-white,
+.button-save,
+.button-blue,
+button[type="submit"],
+input[type="submit"],
+.button-edit,
+.button-edit[type="submit"],
+.button-green,
+.button-add,
+.button-add[type="submit"],
+.button-delete,
+button[type="reset"],
+button[type="submit"].button-delete,
+input[type="reset"],
+.button-warning,
+.button-warning[type="submit"],
+.button-disabled,
+button[type="disabled"],
+.button-alt,
+.button-link {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    min-height: 35px;
+    width: auto;
+    display: inline-block;
+    padding: 0.9em 1.37em;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    color: #fff;
+    font-size: 11px;
+    line-height: 13px;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: none;
+    border-radius: 0.3rem;
+    border: rgba(0, 0, 0, 0.05) 0.1em solid;
+    -webkit-transition: background 0.3s ease, border-color 0.3s ease, width 1s ease;
+    -moz-transition: background 0.3s ease, border-color 0.3s ease, width 1s ease;
+    transition: background 0.3s ease, border-color 0.3s ease, width 1s ease
+}
+.button:not(.button-loading):hover,
+button:not(.button-loading):hover,
+input[type="button"]:not(.button-loading):hover,
+.button-dark:not(.button-loading):hover,
+.button-blue-hollow:not(.button-loading):hover,
+.button-green-hollow:not(.button-loading):hover,
+.button-black-hollow:not(.button-loading):hover,
+.button-white:not(.button-loading):hover,
+.button-save:not(.button-loading):hover,
+.button-blue:not(.button-loading):hover,
+input[type="submit"]:not(.button-loading):hover,
+.button-edit:not(.button-loading):hover,
+.button-green:not(.button-loading):hover,
+.button-add:not(.button-loading):hover,
+.ghost-pro-ad:hover .button-add:not(.button-loading),
+.button-delete:not(.button-loading):hover,
+input[type="reset"]:not(.button-loading):hover,
+.button-warning:not(.button-loading):hover,
+.button-disabled:not(.button-loading):hover,
+.button-alt:not(.button-loading):hover,
+.button-link:not(.button-loading):hover {
+    border-color: transparent;
+    text-decoration: none
+}
+.large.button,
+button.large,
+input.large[type="button"],
+.large.button-dark,
+.large.button-blue-hollow,
+.large.button-green-hollow,
+.large.button-black-hollow,
+.large.button-white,
+.large.button-save,
+.large.button-blue,
+input.large[type="submit"],
+.large.button-edit,
+.large.button-green,
+.large.button-add,
+.large.button-delete,
+button.large[type="submit"].button-delete,
+input.large[type="reset"],
+.large.button-warning,
+.large.button-disabled,
+.large.button-alt,
+.large.button-link {
+    padding: 1em 1.8em;
+    font-size: 14px;
+    line-height: 16px;
+    border-radius: 0.5rem
+}
+.small.button,
+button.small,
+input.small[type="button"],
+.small.button-dark,
+.small.button-blue-hollow,
+.small.button-green-hollow,
+.small.button-black-hollow,
+.small.button-white,
+.small.button-save,
+.small.button-blue,
+input.small[type="submit"],
+.small.button-edit,
+.small.button-green,
+.small.button-add,
+.small.button-delete,
+button.small[type="submit"].button-delete,
+input.small[type="reset"],
+.small.button-warning,
+.small.button-disabled,
+.small.button-alt,
+.small.button-link {
+    padding: 4px 8px 4px 8px;
+    font-size: 10px;
+    line-height: 12px;
+    min-height: 0;
+    letter-spacing: 0px
+}
+.wide.button,
+button.wide,
+input.wide[type="button"],
+.wide.button-dark,
+.wide.button-blue-hollow,
+.wide.button-green-hollow,
+.wide.button-black-hollow,
+.wide.button-white,
+.wide.button-save,
+.wide.button-blue,
+input.wide[type="submit"],
+.wide.button-edit,
+.wide.button-green,
+.wide.button-add,
+.wide.button-delete,
+button.wide[type="submit"].button-delete,
+input.wide[type="reset"],
+.wide.button-warning,
+.wide.button-disabled,
+.wide.button-alt,
+.wide.button-link {
+    width: 100%
+}
+@media (max-width: 500px),
+(max-width: 500px) {
+    .button,
+    button,
+    input[type="button"],
+    .button-dark,
+    button.dark,
+    .button-blue-hollow,
+    .button-green-hollow,
+    .button-black-hollow,
+    .button-white,
+    .button-save,
+    .button-blue,
+    button[type="submit"],
+    input[type="submit"],
+    .button-edit,
+    .button-edit[type="submit"],
+    .button-green,
+    .button-add,
+    .button-add[type="submit"],
+    .button-delete,
+    button[type="reset"],
+    button[type="submit"].button-delete,
+    input[type="reset"],
+    .button-warning,
+    .button-warning[type="submit"],
+    .button-disabled,
+    button[type="disabled"],
+    .button-alt,
+    .button-link {
+        width: 100%
+    }
+}
+
+
+//========================================//
+//..... _BUTTONS SIGNUP BANNER SIGN-UP ...//
+//========================================//
+.home-banner .inner {
+    padding: 0 0 5rem 0;
+    margin-top: 200px;
+    position: relative;
+    z-index: 2
+}
+@media (max-width: 600px),
+(max-height: 600px) {
+    .home-banner .inner {
+        padding: 0 0 5rem
+    }
+}
+.home-banner p {
+    font-style: italic;
+    font-weight: 300;
+    max-width: 550px;
+    line-height: 1.25;
+    margin-top: .4em;
+    margin-bottom: 1.6em;
+    color: #7d878a;
+    font-size: 2em
+}
+.home-section hr {
+    bottom: -10%;
+    width: 100%;
+    overflow: hidden;
+    margin: 2.4em auto 0;
+}
+@media (max-width: 782px) {
+    .home-banner p {
+        margin-bottom: 4.8rem
+    }
+}
+.home-signup-form {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 0 6rem 0
+}
+@media (max-width: 600px) {
+    .home-signup-form {
+        padding: 3rem 0
+    }
+}
+.home-signup-form fieldset {
+    float: left;
+    width: calc(100% - 135px);
+    margin: 0
+}
+.home-signup-form label,
+.home-signup-form form .label,
+form .home-signup-form .label {
+    position: relative;
+    width: calc(33.33% - 10px);
+    padding: 0;
+    margin: 0;
+    margin-right: 10px;
+    float: left
+}
+.home-signup-form .error-message {
+    display: block
+}
+.home-signup-form .error:after,
+.home-signup-form .signup-error:after {
+    font-family: "Icons";
+    font-weight: normal;
+    font-style: normal;
+    vertical-align: -7%;
+    text-transform: none;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    content: "\e009";
+    font-size: 16px;
+    color: #e25440;
+    position: absolute;
+    top: 13px;
+    right: 10px
+}
+.home-signup-form .error:hover,
+.home-signup-form .signup-error:hover {
+    text-decoration: none
+}
+.home-signup-form .error .home-signup-input,
+.home-signup-form .signup-error .home-signup-input {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding-right: 30px;
+    border-color: #e25440
+}
+.home-signup-form .signup-error .signup-message {
+    display: block
+}
+.home-signup-form .error-message,
+.home-signup-form .signup-message {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    left: 0;
+    right: 0;
+    line-height: 16px;
+    display: none;
+    background: #e25440;
+    color: #fff;
+    text-align: left;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    padding: 2px 7px 4px
+}
+@media (max-width: 800px) {
+    .home-signup-form .error-message,
+    .home-signup-form .signup-message {
+        position: relative;
+        top: 0;
+        width: 100%
+    }
+}
+@media (min-width: 801px) {
+    .home-signup-form .error-message,
+    .home-signup-form .signup-message {
+        position: absolute;
+        top: 40px
+    }
+}
+@media (max-width: 800px) {
+    .home-signup-form fieldset {
+        width: 100%;
+        float: none
+    }
+    .home-signup-form fieldset,
+    .home-signup-form .home-signup-button {
+        float: none;
+    }
+    .home-signup-form fieldset label,
+    .home-signup-form fieldset form .label,
+    form .home-signup-form fieldset .label {
+        margin-bottom: 10px;
+        float: none
+    }
+    .home-signup-form fieldset label,
+    .home-signup-form fieldset form .label,
+    form .home-signup-form fieldset .label,
+    .home-signup-form .home-signup-button {
+        width: 100%
+    }
+}
+.home-signup-input {
+    background: repeating-linear-gradient(45deg, 
+              #f4f6f7, #f4f6f7 12px,
+              #f7f9fa 0, #f7f9fa 20px);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    padding: 0 10px;
+    border: #d1d1d1 1px solid;
+    font-size: 1.6rem;
+    box-shadow: none
+}
+.home-signup-input:focus {
+    border: 0
+}
+button.home-signup-button:hover {
+    background: darken($blue, 10%);
+    // box-shadow: rgba(0,0,0,0.5) 1px 0 2px 0
+}
+.home-signup-button {
+    width: 135px;
+    height: 40px;
+    margin: 0;
+    padding: 0 10px;
+    float: right;
+    font-size: 1.4rem;
+    -webkit-transition: background 0.2s;
+    -moz-transition: background 0.2s;
+    transition: background 0.2s;
+    background: $blue;
+    letter-spacing: 0px;
+    line-height: 1;
+    // box-shadow: rgba(0, 0, 0, 0.25) -1px -1px 0 inset, rgba(0,0,0,0.25) 0 1px 0 0
+}
+.home-sign-up-banner {
+    margin-top: 8.5rem;
+    margin-bottom: 8.5rem
+}
+@media (max-width: 400px) {
+    .home-sign-up-banner {
+        margin-top: 4.5rem;
+        margin-bottom: 4.5rem
+    }
+}
+.home-sign-up-banner .inner {
+    position: relative;
+    width: 100%;
+    max-width: 930px;
+    margin-left: auto;
+    margin-right: auto
+}
+@media (min-width: 601px) {
+    .home-sign-up-banner .inner:before {
+        content: '';
+        position: absolute;
+        height: 1px;
+        top: 50%;
+        left: 0;
+        right: 0;
+        margin-top: -1px;
+        background: #edece4;
+        z-index: 1
+    }
+}
+.home-sign-up-banner .button-add {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 440px;
+    display: block;
+    position: relative;
+    z-index: 2
+}
+@media (max-width: 400px) {
+    .home-sign-up-banner .button-add {
+        font-size: 1.3rem
+    }
+}
+@media (min-width: 601px) {
+    .home-sign-up-banner .button-add:before,
+    .home-sign-up-banner .button-add:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 20px;
+        background: #fff
+    }
+    .home-sign-up-banner .button-add:before {
+        left: -20px
+    }
+    .home-sign-up-banner .button-add:after {
+        right: -20px
+    }
+}
+.button-pricing:hover {
+    background: lighten($pinkButton, 10%) !important;
+}
+
+
+//===================================//
+//=====  _BUTTONS VERSION PILL  =====//
+//===================================//
+
+.version-pill {
+    display: inline-block;
+    color: #fff;
+    font-size: 2.4rem;
+    padding: 0.05em 0.2em 0.2em 0.2em;
+    line-height: .8;
+    border-radius: 0.2em;
+    position: relative
+}
+.version-pill.blue {
+    background: #718087;
+    margin-bottom: 15px;
+}
+.version-pill.deepblue {
+    background: $deepblue
+}
+.version-pill.deepblue:before {
+    background: $blue
+}
+.version-pill.blue:before {
+    background: #a6b4b6
+}
+.version-pill .deepblue:after {
+    background: $pinkButton   
+}
+
+.version-pill.green {
+    background: #90A756
+}
+.version-pill.green:before {
+    background: #A0BA5E
+}
+.version-pill:before {
+    content: '';
+    position: absolute;
+    top: 0.05em;
+    left: 0.05em;
+    right: 0.05em;
+    bottom: 46%;
+    border-radius: 0.15em;
+    z-index: 1
+}
+.version-pill span {
+    position: relative;
+    z-index: 2;
+    font-weight: 800;
+    top: 0.04em;
+    text-transform: uppercase
+}
+
+//====================================//
+//======  _BUTTON PRICING PAGE  ======//
+
+.promotion-h2 {
+    margin: 4em auto .5em;
+}
+
+@media (min-width: 660px) {
+    .login-button-container a.login {
+        min-height: 30px !important;
+        padding-top:7.5px !important;
+    }
+}

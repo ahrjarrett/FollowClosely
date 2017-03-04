@@ -1,0 +1,258 @@
+/* ==========================================================================
+   21_PRODUCT
+   ========================================================================== */
+
+
+//================================//
+//... _PRODUCT IFRAME ............//
+//================================//
+.embed-iframe {
+    /* padding: 57px 11px 0; */
+}
+
+.content iframe {border:1px solid gray;}
+.content iframe {
+min-width: 640px;
+min-height: 1136px;
+}
+.content iframe {
+-moz-transform: scale(0.35);
+  -moz-transform-origin: 0 0;
+  -o-transform: scale(0.35);
+  -o-transform-origin: 0 0;
+  -webkit-transform: scale(0.35);
+  -webkit-transform-origin: 0 0; 
+}
+
+
+//=================================//
+//... _PRODUCT PHONE & BROWSERS ...//
+//=================================//
+
+.device-container {
+    position: relative;
+    *zoom: 1
+}
+.device-container:before,
+.device-container:after {
+    content: " ";
+    display: table
+}
+.device-container:after {
+    clear: both
+}
+.browser {
+    overflow: hidden;
+    border: #dbdedf 1px solid;
+    border-radius: 4px;
+    text-align: left
+}
+.browser img {
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+    line-height: 0;
+    display: block;
+    margin: 0;
+    padding: 0
+}
+@media (max-width: 700px) {
+    .browser img {
+        min-height: 0
+    }
+}
+.browser header {
+    padding: 3px 8px;
+    height: 20px;
+    background: #f5f7f8;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset, 0 -1px 0 rgba(0, 0, 0, 0.07) inset
+}
+.browser header .button1,
+.browser header .button2,
+.browser header .button3 {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 2px;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+    -webkit-transition: all 0.15s ease-out 0;
+    -moz-transition: all 0.15s ease-out 0;
+    transition: all 0.15s ease-out 0
+}
+.browser header .button1:hover {
+    background: #F75858;
+    box-shadow: 0 0 1px #F75858
+}
+.browser header .button2:hover {
+    background: #FFDA53;
+    box-shadow: 0 0 1px #FFDA53
+}
+.browser header .button3:hover {
+    background: #D01040;
+    box-shadow: 0 0 1px #9fbb58
+}
+.browser header .fullscreen {
+    float: right;
+    margin-top: .4remG;
+    margin-right: .8em;
+    color: #ced1d2;
+    width: 10px;
+    height: 10px;
+    font-size: 10px;
+    -webkit-transition: all 0.15s ease-out 0;
+    -moz-transition: all 0.15s ease-out 0;
+    transition: all 0.15s ease-out 0
+}
+.browser header .fullscreen:before {
+    font-family: $fontIcon;
+    font-size: 1.5rem;
+    font-style: normal;
+    vertical-align: -7%;
+    text-transform: none;
+    speak: none;
+    line-height: 1.25rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\5c";
+}
+
+.browser header .fullscreen:hover {
+    text-decoration: none
+}
+.browser header .fullscreen:hover {
+    color: #777
+}
+.phone {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 250px;
+    height: 520px;
+    overflow: hidden;
+    padding: 57px 11px 0;
+    border: #dbdedf 1px solid;
+    border-radius: 14%/7%;
+    text-align: left;
+    background: #fff
+}
+@media (max-width: 760px) {
+    .phone {
+        width: calc(250px/2);
+        height: calc(520px/2);
+        padding: calc(57px/2) calc(11px/2) 0;
+        display: none;
+    }
+} 
+.phone img {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    border: #dbdedf 1px solid;
+    line-height: 0;
+    border-radius: 3px;
+    overflow: hidden
+}
+.phone-camera {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    top: 25px;
+    left: 80px;
+    border-radius: 100%;
+    border: #dbdedf 1px solid
+}
+@media (max-width: 760px) {
+    .phone-camera {
+        width: 5px;
+        height: 5px;
+        top: calc(25px/2);
+        left: calc(80px/2)
+    }
+}
+.phone-earpiece {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 40px;
+    height: 5px;
+    position: absolute;
+    top: 27px;
+    left: 50%;
+    margin-left: -20px;
+    border-radius: 10px;
+    border: #dbdedf 1px solid
+}
+@media (max-width: 760px) {
+    .phone-earpiece {
+        width: calc(40px/2);
+        height: 3px;
+        top: calc(27px/2);
+        margin-left: calc(-20px/2);
+        border-radius: calc(10px/2)
+    }
+}
+.phone-homebutton {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    width: 38px;
+    height: 38px;
+    position: absolute;
+    bottom: 9px;
+    left: 50%;
+    margin-left: -19px;
+    border-radius: 100%;
+    border: #dbdedf 1px solid
+}
+@media (max-width: 760px) {
+    .phone-homebutton {
+        width: calc(38px/2);
+        height: calc(38px/2);
+        bottom: calc(9px/2);
+        margin-left: calc(-19px/2)
+    }
+}
+.left-phone .phone {
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    z-index: 100;
+    box-shadow: -4px 2px 6px rgba(0,0,0,0.2)
+}
+@media (max-width: 760px) {
+    .left-phone .phone {
+        bottom: -15px
+    }
+}
+.left-phone .browser {
+    max-width: 850px;
+    float: right;
+    margin-left: 11px
+}
+.right-phone .phone {
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    z-index: 100;
+    box-shadow: -4px 2px 6px rgba(0,0,0,0.2)
+}
+@media (max-width: 760px) {
+    .right-phone .phone {
+        bottom: -15px
+    }
+}
+.right-phone .browser {
+    max-width: 850px;
+    float: left;
+    margin-right: 11px
+}

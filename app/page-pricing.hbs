@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{! Document Settings }}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    {{! Page Meta }}
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://googledrive.com/host/0BzwOBEBWIA-qWTQ3N0J6T0U1aFU">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+    {{! Styles'n'Scripts }}
+
+    <link rel="stylesheet" type="text/css" href="{{asset "css/stylez.css"}}" />
+
+    <meta property="twitter:site" content="@_Closely">
+    <meta property="twitter:domain" content="FollowClosely.com" />
+    <meta property="og:site_name" content="FollowClosely" />
+    {{ghost_head}}
+</head>
+
+
+<body class="{{body_class}}">
+    <div id="fb-root"></div>
+
+
+{{> global-header2}}
+
+{{!--     <header id="global-header" class="global-header navbar">
+       <nav role="navigation">
+           <div class="wrapper">
+           </div>
+        </nav>
+    </header>
+    <header class="blog-header">
+        <nav class="blog-nav">
+            {{navigation}}
+        </nav>
+    </header> --}}
+
+<div class="clearfix"></div>
+
+<main role="main">
+  <section class="pricing-wrapper page-wrapper">
+    <h1 class="pricing-headline">Free Stuff<span class="dashy"> vs. </span>Pro Account</h1>
+    <h3 class="pricing-subheader">You pay us. We make you better at stuff.<br>You get to play it cool.</h3>
+
+    {{> pricing-tables}}
+
+  </section>
+
+
+{{> faq}}
+</section>
+
+
+
+
+<div class="flexwrapper container">
+
+<div class="flexleft flex-item">
+<h1 class="pitch-header">integrations</h1>
+<ul class="pitch-ul">
+<!-- SVG ICONCHAT.SVG -->
+     <h3 class="pitch-p black"><li class="pitch-li-over"><img class="list-style-svg" alt="Node Icon" src="{{asset "images/iconlink.svg"}}" />Plug In Your Pipeline</h3>
+     <h3 class="pitch-p pitch-h3">If your pipeline is like a stream, think of our API as plumbing. We build you the infrustructure for managing Input/Output feeds, just like a faucet. You say when.</li></h3>
+<!-- SVG ICONCHAT.SVG -->
+    <h3 class="pitch-p black"><li class="pitch-li-through"><img class="list-style-svg" alt="Intercom Icon" src="{{asset "images/iconchat.svg"}}" />You Do What You Do Best</h3>
+    <h3 class="pitch-p pitch-h3">You’re most productive when you can focus all your attention on closing, from start to finish. We’re like that too, except with this.</li></h3>
+<!-- SVG ICONSTAR.SVG -->
+    <h3 class="pitch-p black"><li class="pitch-li-under"><img class="list-style-svg"alt="Organic Chemistry Icon" src="{{asset "images/iconstar.svg"}}" />Get Used to It</h3>
+    <h3 class="pitch-p pitch-h3">FollowClosely configures all the loose ends on your behalf. You’ll never think about it again&mdash;until your next project.</li></h3>
+
+</ul>
+
+</div>
+<div class="flexright flex-item">
+<img alt="FollowClosely Integration" src="{{asset "images/pricing-logos.png"}}" style="height:750px"/>
+</div>
+
+</div>
+
+<div style="height:10em">
+</div>
+
+<h2 style="text-align:center;margin-bottom:2rem">See for yourself.</h2>
+
+{{>form-demo}}
+
+<div style="min-height:10em">
+</div>
+
+
+</main>
+
+<div class="clearfix"></div>
+
+{{>global-footer}}
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    {{ghost_foot}}
+
+    <script src="{{asset "js/navigation.js"}}"></script>
+
+    <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
+
+</body>
+</html>

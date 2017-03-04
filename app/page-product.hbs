@@ -1,0 +1,57 @@
+{{!< default}}
+
+<div class="wrap">
+    <section class="">
+
+        <article class="{{post_class}}">
+            {{#post}}
+
+            <a class="post-meta" href="{{@blog.url}}/blog">&larr; Back to the front page</a>
+
+            <h1 class="post-title">{{{title}}}</h1>
+
+            <section class="post-content">
+                {{#if image}}<img src="{{image}}" alt="Post image" />{{/if}}
+                {{content}}
+
+            <section id="product" class="home-showcase home-section left-phone">
+              <div class="inner">
+                {{>home-subtitle-01}}
+                {{>home-showcase-01}}
+              </div>
+            </section>
+
+            <section class="home-section right-phone">
+              <div class="inner">
+                {{>home-subtitle-02}}
+                {{>home-showcase-02}}
+              </div>
+            </section>
+
+            <section class="home-section right-phone">
+              <div class="inner">
+                {{>home-subtitle-03}}
+                {{>home-showcase-03}}
+              </div>
+            </section>
+
+            <section class="home-section right-phone">
+              <div class="inner">
+                {{>home-subtitle-04}}
+                {{>home-showcase-04}}      
+              </div>
+            </section>
+
+            <section class="home-section home-sign-up-banner">
+              <div class="inner">
+                <a class="button-add large" data-arcticscroll="true" data-speed="600" href="https://followclosely.com/pricing">See pricing & packages</a>
+              </div>
+            </section>
+                
+          </section>
+
+        {{/post}}
+      </article>
+    </section>
+ 
+</div>

@@ -1,0 +1,110 @@
+// Transforms and Transitions
+
+$transform90degrees: rotateX(90deg);
+
+// -webkit-transition: all 0.1s linear;
+//     -moz-transition: all 0.1s linear;
+
+$hoverTransition: all 0.1s linear;
+
+// ROBOTO 300 & 300 Italic
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,300italic);
+
+@font-face {
+	font-family: 'Grand Hotel';
+	src: url(../../assets/fonts/GrandHotel-Regular.ttf) format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Book';
+	src: url(https://googledrive.com/host/0BzwOBEBWIA-qM2dJVFVpeUgteVk) format('embedded-opentype'),
+		url(https://googledrive.com/host/0BzwOBEBWIA-qdVZ6YkJodl90dFE) format('woff'),
+		url(https://googledrive.com/host/0BzwOBEBWIA-qcjRpQnViZnhSWGc) format('truetype'),
+		url(https://googledrive.com/host/0BzwOBEBWIA-qZjY4UHZfT1hJWlE) format('svg');
+		font-weight:normal;
+		font-style:normal;
+}
+@font-face {
+	font-family: 'Book';
+	src: url(https://googledrive.com/host/0BzwOBEBWIA-qMHhNUnFxNDFkV1E) format('embedded-opentype'),
+		url(https://googledrive.com/host/0BzwOBEBWIA-qNDVXQlEyQ3hWOFU) format('woff'),
+		url(https://googledrive.com/host/0BzwOBEBWIA-qSzladjgxZHhyMFE) format('truetype'),
+		url(https://googledrive.com/host/0BzwOBEBWIA-qdk4tenZ6NjVTT0U) format('svg');
+		font-weight:normal;
+		font-style:italic
+}
+
+@font-face {
+	font-family: 'Medium';
+	src: url(https://googledrive.com/host/0BzwOBEBWIA-qYzhkb2Y3dXQyZ1U) format('embedded-opentype'),
+		url(https://googledrive.com/host/0BzwOBEBWIA-qQWljVVpaUmtoVjA) format('woff'),
+		url(https://googledrive.com/host/0BzwOBEBWIA-qc2xVMENlODliaXM) format('truetype'),
+		url(https://googledrive.com/host/0BzwOBEBWIA-qT1VXWm9EdjFwRW8) format('svg');
+		font-weight:600;
+		font-style:normal
+}
+
+@font-face {
+	font-family: 'Medium';
+	src: url(https://googledrive.com/host/0BzwOBEBWIA-qcndnRlpiZ3dIdW8) format('embedded-opentype'),
+		url(https://googledrive.com/host/0BzwOBEBWIA-qM3g0aGtPdHA4YVk) format('woff'),
+		url(https://googledrive.com/host/0BzwOBEBWIA-qeTlDZlA4YnA2LWs) format('truetype'),
+		url(https://googledrive.com/host/0BzwOBEBWIA-qbmdmMm94Tk0ycWM) format('svg');
+		font-weight:600;
+		font-style:italic
+}
+
+@font-face {
+	font-family: 'Bold';
+	src: url(https://googledrive.com/host/0BzwOBEBWIA-qNUphZ3VvLU9WNFk) format('embedded-opentype'),
+		url(https://googledrive.com/host/0BzwOBEBWIA-qNzRtb3JaOWFqdm8) format('woff'),
+		url(https://googledrive.com/host/0BzwOBEBWIA-qT3NFbTBvRlRzZzg) format('truetype'),
+		url(https://googledrive.com/host/0BzwOBEBWIA-qdE00YzUyWjY5REE) format('svg');
+		font-weight:bold;
+		font-style:normal
+}
+
+@font-face {
+	font-family: 'Bold';
+	src: url(https://googledrive.com/host/0BzwOBEBWIA-qdE00YzUyWjY5REE) format('embedded-opentype'),
+		url(https://googledrive.com/host/0BzwOBEBWIA-qM2pmV3llRy1MRG8) format('woff'),
+		url(https://googledrive.com/host/0BzwOBEBWIA-qV2kySjc5X0dHaVU) format('truetype'),
+		url(https://googledrive.com/host/0BzwOBEBWIA-qMVFkUDVlZTdQM1E) format('svg');
+		font-weight:bold;
+		font-style:italic
+}
+
+@font-face {
+	font-family: 'Black';
+	src: url(https://googledrive.com/host/0BzwOBEBWIA-qV1VCRS0yNG1vU3c) format('embedded-opentype'),
+		url(https://googledrive.com/host/0BzwOBEBWIA-qV1VCRS0yNG1vU3c) format('woff'),
+		url(https://googledrive.com/host/0BzwOBEBWIA-qV3kwaGd4NEdmX0k) format('truetype'),
+		url(https://googledrive.com/host/0BzwOBEBWIA-qaGEya3FfUHp1LTg) format('svg');
+		font-weight:900;
+		font-style:normal
+}
+@font-face {
+	font-family: 'Black';
+	src: url(https://googledrive.com/host/0BzwOBEBWIA-qYTRxNzBBT05fWkU) format('embedded-opentype'),
+		url(https://googledrive.com/host/0BzwOBEBWIA-qNklBeUF1dk03ckE) format('woff'),
+		url(https://googledrive.com/host/0BzwOBEBWIA-qYkNrSDFKLXVFcFE) format('truetype'),
+		url(https://googledrive.com/host/0BzwOBEBWIA-qM3pEN294ZFkwX00) format('svg');
+		font-weight:900;
+		font-style:italic
+
+}
+
+$fontBook: 'Book', sans-serif;
+$fontMedium: 'Medium', sans-serif;
+$fontBold: 'Bold', sans-serif;
+$fontBlack: 'Black', sans-serif;
+$fontIcon: "followcloselylogo";
+$script: "Grand Hotel";
+
+// $hoverAnimation: @import transition: background 0.3s ease, border-color 0.3s ease, width 1s ease;}
+
+// grid-width variables
+$gw-column: 10rem;
+$gw-gutter: 2rem;

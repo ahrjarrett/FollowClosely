@@ -1,0 +1,28 @@
+/* ==========================================================================
+   25_GLOBAL_HEADER_2
+   ========================================================================== */
+
+.global-header2 nav {
+    background: #fff;
+    width: 100%;
+    padding: 0px 0;
+    position: absolute;
+    z-index: 700;
+    position: fixed;
+        -webkit-transition: all 0.15s ease-out 0;
+        -moz-transition: all 0.15s ease-out 0;
+    transition: all 0.15s ease-out 0;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #333c4e), color-stop(100%, #333c4e), color-stop(100%, rgba(255, 255, 255, 0.93)));
+    background: -webkit-linear-gradient(top, #333c4e 0%, #333c4e 100%, rgba(255, 255, 255, 0.93) 100%);
+    background: linear, to bottom, #333c4e 0%, #333c4e 100%, rgba(255, 255, 255, 0.93) 100%;
+}
+.global-header2 nav:before {
+    content: "";
+    height: 36px;
+    width: 70%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -35%;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 0;
+}

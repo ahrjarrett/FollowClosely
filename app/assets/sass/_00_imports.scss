@@ -1,0 +1,32 @@
+/* ==========================================================================
+   00_IMPORTS
+   ========================================================================== */
+
+@import "bourbon/_bourbon";
+$rounded: 2px;
+$shadow: rgba(0,0,0,0.05) 0 1px 5px;
+$default-transition-duration: 0.3s;
+
+/*
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+*/
+// Breakpoint - http://breakpoint-sass.com/
+@import "breakpoint";
+$breakpoint-default-feature: max-width;
+
+// Max widths
+$netbook: 1000px;
+$tablet: 800px;
+$mobile: 400px;
+
+// Min widths
+$biggerthan-widescreen: min-width 1500px, min-width 1500px;
+$biggerthan-netbook: min-width 1000px, min-width 1000px;
+$biggerthan-tablet: min-width 800px, min-width 800px;
+$biggerthan-mobile: min-width 401px, min-width 401px;
+
+// Heights
+$letterbox: max-height 600px, max-height 600px;
+
+// Pixel Densities
+$retina: min-resolution 1.5dppx;

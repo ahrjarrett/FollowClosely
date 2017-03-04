@@ -1,0 +1,81 @@
+{{!< default}}
+
+<div class="wrap {{post_class}}">
+    <section class="blog-content">
+        <article>
+        {{#post}}
+
+            {{! If post is featured and has an image, make a big hero banner }}
+            {{#if image}}{{#if featured}}
+            <div class="hero">
+                <div class="hero-image" style="background-image: url({{image}});"></div>
+            </div>
+            {{/if}}{{/if}}
+
+            <a class="post-meta back-link" href="{{@blog.url}}/blog">&larr; Back to the front page</a>
+
+            <h1 class="post-title">{{{title}}}</h1>
+            <section class="post-meta">
+                <img class="author-img" src="{{author.image}}" alt="Author image" nopin="nopin" />
+                <span class="author-name">{{author}}</span>
+                on the
+                <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="Do of MMMM YYYY"}}</time>
+                <span class="tags">{{tags prefix="in "}}</span>
+            </section>
+
+            <section class="post-content">
+                {{#if image}}{{#unless featured}}<img src="{{image}}" alt="Post image" />{{/unless}}{{/if}}
+                {{content}}
+            </section>
+
+            <footer class="post-footer">
+
+                <section class="author">
+                    <img class="author-img" src="{{author.image}}" alt="Author image" nopin="nopin" />
+                    <div class="author-meta">
+                        <h4>{{author.name}}</h4>
+                        <p>{{{author.bio}}} <a href="{{author.website}}">{{author.website}}</a></p>
+                    </div>
+                </section>
+
+                <section class="read-next">
+                    {{#next_post}}
+                    <a class="read-next-story {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
+                        <section class="post">
+                            <h2>{{title}}</h2>
+                            <p>{{excerpt words="19"}}&hellip;</p>
+                        </section>
+                    </a>
+                    {{/next_post}}
+                </section>
+
+                <a class="button-add button-pink large wide" data-toggle="modal" data-target="#modal-subscribe">Subscribe for new content</a>
+
+<section class="disqus-wrapper">
+    <div id="disqus_thread"></div>
+</section>
+
+<script>
+    var disqus_config = function () {
+        this.page.url = 'https://followclosely.com/{{url}}';
+        this.page.identifier = 'ghost-{{id}}';
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = '//followclosely.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+           </footer>
+        {{/post}}
+</article>
+
+    </section>
+
+    {{> sidebar}}
+
+</div>

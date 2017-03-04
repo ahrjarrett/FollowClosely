@@ -1,0 +1,21 @@
+{
+  "name": "my-ghost-theme",
+  "version": "0.0.0",
+  "description": "ghost hacking theme",
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "ghost": "0.7.5",
+    "gulp": "^3.9.0",
+    "gulp-clean-css": "^2.0.3",
+    "gulp-concat": "^2.6.0",
+    "gulp-if": "^2.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.4",
+    "gulp-sass": "^2.2.0",
+    "gulp-sym": "0.0.14",
+    "gulp-uglify": "^1.5.3",
+    "gulp-useref": "^3.0.8",
+    "require-dir": "^0.3.0",
+    "run-sequence": "^1.1.5"
+  }
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html class="no-touch">
+<head>
+  {{! Document Settings }}
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  {{! Page Meta }}
+  <title>{{meta_title}}</title>
+  <meta name="description" content="{{meta_description}}" />
+
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="shortcut icon" type="image/x-icon" href="https://googledrive.com/host/0BzwOBEBWIA-qWTQ3N0J6T0U1aFU">
+
+  {{! Styles'n'Scripts }}
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="{{asset "css/stylez.css"}}" />
+
+  <meta property="twitter:site" content="@_Closely">
+  <meta property="twitter:domain" content="FollowClosely.com" />
+  <meta property="og:site_name" content="FollowClosely" />
+  {{ghost_head}}
+</head>
+
+<body class="home">
+
+{{> global-header}}
+{{> modal-demo}}
+
+<div class="clearfix"></div> 
+
+<div id="darken">
+  <main class="main-top" role="main">
+    <section class="home-section home-banner full-height" id="home-top" >
+      
+      <div class="inner">
+        {{> home-headline}}
+        {{> form-demo}}
+      </div>
+
+      <section class="home-section home-logo-quotes">
+        <div class="inner">
+          <a class="hero-scroll smoothScroll" href="/#product"><i class="fa fa-angle-down"></i></a>
+        </div>
+
+      </section>
+    </section>{{! .home-section .home-banner }}
+  </main>
+</div>{{! #darken}}
+
+<main class="main-mid main-subhead">
+  <section id="product" class="home-showcase home-section left-phone">
+    <div class="inner">
+      {{>home-subtitle-01}}
+      {{>home-showcase-01}}
+    </div>
+  </section>
+</main>
+
+<main class="main-mid main-grey">
+  <section id="social-listening" class="home-section right-phone">
+    <div class="inner">
+      {{>home-subtitle-02}}
+      {{>home-showcase-02}}
+    </div>
+  </section>
+</main>
+<main class="main-mid">
+  <section id="website" class="home-section right-phone">
+    <div class="inner">
+      {{>home-subtitle-03}}
+      {{>home-showcase-03}}
+    </div>
+  </section>
+</main>
+<main class="main-mid main-grey">
+
+  <section id="tracking" class="home-section right-phone">
+    <div class="inner">
+      {{>home-subtitle-04}}
+      {{>home-showcase-04}}      
+    </div>
+  </section>
+</main>
+</div>
+<main class="main-mid">
+  
+
+  <div class="home-section users-showcase">
+    <h2 class="subtitle">FollowClosely uses only the best tools to automate your marketing.</h2>
+    <img alt="Users" src="{{asset "images/fclosely_tools.png"}}"/>
+  </div>  
+</main>
+<main class="main-mid main-bottom">
+<section class="home-section home-sign-up-banner">
+    <div class="inner">
+      <a class="button-add large" href="pricing">See pricing &amp; packages</a>
+    </div>
+  </section>
+
+</main>
+<div class="clearfix"></div>
+
+{{>global-footer}}
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+{{ghost_foot}}
+
+<script src="{{asset "js/navigation.js"}}"></script>
+<script src="{{asset "js/smooth-scroll.js"}}"></script>
+<script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
+<script type="text/javascript" src="{{asset "js/stickyHeader.js"}}"></script>
+<script type="text/javascript" src="{{asset "js/index.js"}}"></script>
+
+<script type="text/javascript" src="{{asset "js/application.js"}}"></script>
+
+</body>
+</html>

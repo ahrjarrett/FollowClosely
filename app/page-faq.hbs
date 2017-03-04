@@ -1,0 +1,52 @@
+{{!< default}}
+<div class="clearfix"></div>
+<main role="main" class="demo-main">
+<section class="demo-header-wrapper">
+
+<header>
+</header>
+<article class="developer wrapper">
+
+
+
+</article>
+</section>
+</main>
+
+
+<div class="wrap">
+    <section class="blog-content">
+
+        <article class="{{post_class}}">
+            {{#post}}
+
+                    <a class="post-meta" href="{{@blog.url}}/blog"></a>
+
+            <h1 class="post-title">{{{title}}}</h1>
+
+            <section class="post-content">
+                {{#if image}}<img src="{{image}}" alt="Post image" />{{/if}}
+                {{content}}
+                <h1 style="margin-top:0; margin-bottom: 1em">FollowClosely FAQ</h1>
+                {{>faq}}
+            </section>
+            <hr>
+
+
+
+
+            <footer class="post-footer">
+            <h2 style="margin:0">Trying to schedule your onboarding call?</h2><br>
+                {{>form-sign-up}}
+            </footer>
+
+
+            {{/post}}
+
+        </article>
+
+    </section>
+
+    {{> sidebar-form}}
+
+</div>

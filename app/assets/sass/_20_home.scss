@@ -1,0 +1,157 @@
+/* ==========================================================================
+   20_HOME
+   ========================================================================== */
+
+
+//==========================//
+//======  _HOME HERO  ======//
+//==========================//
+
+@media (max-width: 400px) {
+    .home-banner {
+        margin-bottom: 5rem
+    }
+}
+@media (max-width: 800px) {
+    .home-banner {
+        padding-top:25px;
+    }
+}
+@media (max-width: 768px) {
+    .home-banner h1 {
+        margin-bottom:-4rem !important;
+    }
+}
+@media(max-width: 600px) {
+    .home-banner h1 {
+        margin-bottom: -7.5rem !important;
+    }
+}
+.main-top {
+    background-image:url(../images/file2.jpg);
+}
+.main-top img {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.home-banner h1 {
+    color: #fff;
+    margin-top: -2.35em;
+    margin-bottom: -3rem;
+    padding-bottom: .4rem;
+    font-family: $fontBold;
+}
+#main-menu .signup-button-container {
+    color: #fff;
+}
+
+@media (max-width:800) {
+    .home .global-header .login {
+        padding: 13px 10px !important;
+    }
+}
+.hero-scroll {
+    margin: auto;
+    font-size: 3.5em;
+    color:#fff;
+}
+
+
+//=================================//
+//======  _HOME HOME LAYOUT  ======//
+//=================================//
+
+.main-grey {
+    background: #464d5e;
+    margin-top:9.6em;
+}
+.main-grey h2 {
+    padding-top: 3.2em;
+    color:$whitish
+}
+.main-grey p {
+    color: $greenish
+}
+.main-mid {
+
+}
+main.main-top {
+    margin: 0 auto;
+    padding: 0;
+}
+section.home-sign-up-banner {
+}
+.users-showcase {
+    margin-top: 3.2em;
+}
+main.main-bottom {
+    padding-bottom:6.4em;
+}
+footer {
+    color: #8b959c;
+}
+
+footer li {
+    color: $blue
+}
+footer a:hover {
+    text-decoration: none;
+}
+footer.global-footer {
+    padding-top: 9.6em;
+    background: #F3F4F8;
+}
+footer.post {
+    background-color: #252b33;
+    li.footer-nav-heading {
+        color: $whitish;
+    }
+    a {
+        color: $greenish
+    }
+    i:hover {
+        color: $yellow
+    }
+}
+
+
+//=============================//
+//======  _HOME GENERAL  ======//
+//=============================//
+
+.full-height {
+    height: 100vh
+}
+.email-resources {
+    border: 1px solid #5BA4E5;
+    background: transparent;
+    color: #5BA4E5; 
+}
+section .email-resources:hover {
+    background: #217fd2;
+    border-color: #217fd2;
+    color: #fff;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    transition: all 0.1s linear;    
+}
+.subscribe-weekly {
+    font-weight: 500;
+    border: 2px solid $pinkButton;
+    background: transparent;
+    color: $pinkButton; 
+}
+
+.subscribe-weekly:hover {
+    background: $pinkButton !important;
+    border-color: $pinkButton !important;
+    color: #fff;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    transition: all 0.1s linear; 
+}
+nav.navigation-home div .ghost-logo {
+    color: red;
+}

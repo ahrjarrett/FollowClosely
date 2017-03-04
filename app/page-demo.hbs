@@ -1,0 +1,42 @@
+{{!< default}}
+<div class="clearfix"></div>
+<main role="main" class="demo-main">
+<section class="demo-header-wrapper">
+
+<header>
+</header>
+<article class="developer wrapper">
+
+
+
+</article>
+</section>
+</main>
+
+
+<div class="wrap">
+    <section class="blog-content">
+
+        <article class="{{post_class}}">
+            {{#post}}
+
+                    <a class="post-meta" href="{{@blog.url}}/blog"></a>
+
+            <h1 class="post-title">{{{title}}}</h1>
+
+            <section class="post-content">
+                {{#if image}}<img src="{{image}}" alt="Post image" />{{/if}}
+                {{content}}
+                {{>form-demo}}
+
+                
+            </section>
+
+            {{/post}}
+        </article>
+
+    </section>
+
+    {{> sidebar}}
+
+</div>

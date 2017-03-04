@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{! Document Settings }}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    {{! Page Meta }}
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://googledrive.com/host/0BzwOBEBWIA-qWTQ3N0J6T0U1aFU">
+
+    {{! Styles'n'Scripts }}
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="{{asset "css/stylez.css"}}" />
+
+    <meta property="twitter:site" content="@_Closely">
+    <meta property="twitter:domain" content="FollowClosely.com" />
+    <meta property="og:site_name" content="FollowClosely" />
+    {{ghost_head}}
+</head>
+
+<body class="{{body_class}}">
+    <div id="fb-root"></div>
+
+{{> global-header2}}
+
+    {{!-- <header id="global-header2" class="global-header2 navbar sticky">
+        <nav role="navigation" class="flexnav">
+        <ul class="ul-header">
+        <li>
+            <div class="wrapper">
+
+            <aside class="subscribe-banner">
+            <a class="button" data-toggle="modal" data-target="#modal-demo">Free Demo</a>
+            </aside>
+            </div>
+        </li>
+        </ul>
+        </nav>
+    </header> --}}
+        {{>modal-demo}}
+    <div class="clearfix"></div>
+
+    <main class="blog-wrapper" role="main">
+
+    <div style="height:3em"></div>
+        <div class="page-wrapper">
+            {{{body}}}
+            <div class="clearfix"></div>
+        </div>
+    </main>
+
+
+
+    <div class="clearfix"></div>
+
+    <footer id="global-footer" class="{{title}}-footer">
+        <nav id="footer-nav" role="navigation">
+            <ul id="footer-menu">
+                <li class="logo"><a href="/"><img alt="FollowClosely" src=""></a></li>
+                <li><a class="" href="">About</a></li>
+                <li><a href="">Status</a></li>
+                <li><a class="" href="pricing">Pricing</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a class="" href="">Terms</a></li>
+                <li><a class="" href="">Privacy</a></li>
+                <li><a class="" href="">Contact</a></li>
+            </ul>
+            <div class="clearfix"></div>
+
+        </nav>
+        <div class="clearfix"></div>
+    </footer>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    {{ghost_foot}}
+
+    <script src="{{asset "js/navigation.js"}}"></script>
+
+    <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
+
+    <script type="text/javascript" src="{{asset "js/application.js"}}"></script>
+
+    <script type="text/javascript">
+
+var disqus_shortname = 'FollowClosely';
+
+/* * * DON'T EDIT BELOW THIS LINE * * */
+(function () {
+var s = document.createElement('script'); s.async = true;
+s.type = 'text/javascript';
+s.src = 'https://' + disqus_shortname + '.disqus.com/count.js';
+(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
+
+</body>
+</html>

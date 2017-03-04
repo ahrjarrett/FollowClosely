@@ -1,0 +1,28 @@
+{{!< default}}
+
+<div class="wrap">
+    <section class="blog-content">
+
+        <article class="{{post_class}}">
+            {{#post}}
+            
+            <!--<a class="post-meta" href="{{@blog.url}}/blog">&larr; Back to the front page</a>-->
+
+
+            <h1 class="signup-header post-title">{{{title}}}</h1>
+            
+                <section class="signup-content post-content">
+                    {{#if image}}<img src="{{image}}" alt="Post image" />{{/if}}
+                    {{content}}
+                    {{>form-sign-up}}
+                    
+                </section>
+
+            {{/post}}
+        </article>
+
+    </section>
+
+    {{> sidebar-form}}
+
+</div>

@@ -1,0 +1,56 @@
+{{#foreach posts}}
+{{#if featured}}
+  <article class="{{post_class}}">
+      <header class="post-header">
+          <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+          <section class="post-meta">
+              <img class="author-img" src="{{author.image}}" alt="Author image" nopin="nopin" />
+              <span class="author-name">{{author}}</span>
+              &bull;
+              <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="D MMM YYYY"}}</time>
+              <span class="tags">{{tags prefix="• Subject: "}}</span>
+          </section>
+      </header>
+      <section class="post-excerpt">
+          <p>{{excerpt words="55"}}&hellip;</p>
+      </section>
+      <footer class="more-links">
+          <a class="read-more button-save" href="{{url}}">Read More</a>
+          <div class="right">
+              <a href="https://twitter.com/share" class="twitter-share-button" data-url="{{url absolute="true"}}" data-text="{{title}}" data-via="TweetClosely" data-related="TweetClosely">Tweet</a>
+              <div class="fb-like" data-href="{{url absolute="true"}}" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+          </div>
+      </footer>
+  </article>
+{{/if}}
+{{/foreach}}
+
+{{#foreach posts}}
+{{#unless featured}}
+  <article class="{{post_class}}">
+      <header class="post-header">
+          <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+          <section class="post-meta">
+              <img class="author-img" src="{{author.image}}" alt="Author image" nopin="nopin" />
+              <span class="author-name">{{author}}</span>
+              &bull;
+              <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="D MMM YYYY"}}</time>
+              <span class="tags">{{tags prefix="• Subject: "}}</span>
+          </section>
+      </header>
+      <section class="post-excerpt">
+          <p>{{excerpt words="55"}}&hellip;</p>
+      </section>
+      <footer class="more-links">
+          <a class="read-more button-save" href="{{url}}">Read More</a>
+          <div class="right">
+              <a href="https://twitter.com/share" class="twitter-share-button" data-url="{{url absolute="true"}}" data-text="{{title}}" data-via="TweetClosely" data-related="TweetClosely">Tweet</a>
+              <div class="fb-like" data-href="{{url absolute="true"}}" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+          </div>
+      </footer>
+  </article>
+{{/unless}}
+{{/foreach}}
+
+
+{{pagination}}
