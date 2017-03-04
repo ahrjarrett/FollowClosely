@@ -1,7 +1,8 @@
 {
-  "name": "my-ghost-theme",
-  "version": "0.0.0",
+  "name": "FollowClosely",
+  "version": "0.0.1",
   "description": "ghost hacking theme",
+  "engine": "node 4.2.0",
   "devDependencies": {
     "browser-sync": "^2.11.1",
     "ghost": "0.7.5",
